@@ -7,8 +7,9 @@ import {
     Container, Flex, VStack, Heading, Text, SimpleGrid, GridItem,
     FormControl, FormLabel, Input, Select, Button, Checkbox, Divider,
     HStack, AspectRatio, Image, Stack, useColorMode, useColorModeValue,
-    UseBreakpointValue, useBreakpointValue,
+    useBreakpointValue,
 } from '@chakra-ui/react'
+
 
 
 // Supports weights 300-800
@@ -82,7 +83,7 @@ function App() {
               <Checkbox defaultChecked>Enviar a la direccion de facturacion</Checkbox>
             </GridItem>
             <GridItem colSpan={2}>
-              <Button size={'lg'} variant={'solid'} colorScheme={'red'}>Ordenar</Button>
+              <Button size={'lg'} variant={'solid'} colorScheme={'brand'}>Ordenar</Button>
             </GridItem>
           </SimpleGrid>
         </VStack>
