@@ -4,6 +4,26 @@
 import {extendTheme, theme as base, withDefaultColorScheme, withDefaultVariant,} from '@chakra-ui/react'
 
 
+const inputSelectStyles = {
+    variants:{
+        filled:{
+            field:{
+                _focus:{
+                    borderColor:'brand.500',
+                }
+            }
+        }
+    },
+    sizes:{
+        md:{
+            field:{
+                borderRadius:'none'
+                }
+        }
+    }
+}
+
+
 const theme = extendTheme({
 
             colors:{
@@ -25,7 +45,12 @@ const theme = extendTheme({
                 heading:`Open Sans Variable, ${base.fonts?.heading}`,
                 body:`Open Sans Variable, ${base.fonts?.body}`,
             },
+            components:{
+                Input:{ ...inputSelectStyles},
+                Select:{...inputSelectStyles},
+            }
         },
+
     withDefaultColorScheme({
         colorScheme: 'brand',
         components: ['Checkbox'],
