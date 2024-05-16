@@ -50,16 +50,15 @@ const theme = extendTheme({
                 Select:{...inputSelectStyles},
             }
         },
-
     withDefaultColorScheme({
-        colorScheme: 'brand',
+        colorScheme:'brand',
         components: ['Checkbox'],
     }),
     
     withDefaultVariant({
        variant:'filled',
        components:['Input', 'Select'],
-    }),
+    })
 )
 
 
